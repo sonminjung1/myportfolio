@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+  <!-- FontAwesome -->
+  <script defer src="https://kit.fontawesome.com/df4f7d9123.js" crossorigin="anonymous"></script>
+  <!-- Custom Js-->
+  <script defer src="/js/common.js"></script>
+  <script defer src="/js/website.js"></script>
+  <!-- Custom Css -->
+  <link rel="stylesheet" href="/css/website.css">
+  <title>Website</title>
+</head>
+<body>
+  <!-- <div id="nav"></div> -->
+  <div class="nav-wrapper">
+    <div class="nav-inner">
+      <div class="logo">
+        <h2 class="logo-name"><a href="/index.html">Min Jung</a></h2>
+      </div>
+      <nav class="center-menu">
+        <ul class="nav-menu">
+          <li class="nav-menu-item"><a href="/website.html">Website</a></li>
+          <li class="nav-menu-item"><a href="/mobile.html">Mobile</a></li>
+          <li class="nav-menu-item"><a href="/react.html">React</a></li>
+          <li class="nav-menu-item"><a href="/web_design.html">Design</a></li>
+          <li class="nav-menu-item"><a href="/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="l-nav">
+        <div class="l-nav_btn c-font-en">
+            <div class="l-nav_btn-inner">
+              <span data-txt="Menu" class="menu">Menu</span>
+              <span data-txt="Close" class="close">Close</span>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="fullscreen-menu">
+    <ul>
+        <li><a href="/website.html">Website</a></li>
+        <li><a href="/mobile.html">Mobile</a></li>
+        <li><a href="/react.html">React</a></li>
+        <li><a href="/web_design.html">Design</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+    </ul>
+    <div class="fullscreen-menu-icon">
+        <i class="fa-brands fa-github"></i>
+        <i class="fa-solid fa-book"></i>
+    </div>
+</div>
+  <span class="cursor"></span>
+  <div class="section-group">
+    <div class="section project-header-wrapper">
+        <div class="project-header-inner">
+            <div class="project-header-title">
+                <h1>My Project</h1>
+                <div class="project-sub-title">
+                  <h1 title="Website Project">Website</h1>
+                  <img src="/img/website/notebook.png" alt="">
+                </div>
+            </div>
+            <div class="project-header-text">
+                <p>
+                <b>레이아웃을 구성하는 박스를 기반으로 배치</b>하며 <b>UX/UI를 고려한 스타일</b>을 그려내고 <b>동적인 페이지를 만들어 생동감</b>이 있는 웹페이지를 선호합니다. 반응형 웹 접근성과 웹 표준을 고려한 웹 페이지를 그려내기위해 미디어 쿼리를 사용하여 화면 크기에 따라 스타일을 조정하였습니다.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="section project-view-wrapper">
+      <div class="project-num">
+        <p>
+          <span class="start-num"></span>
+          -
+          <span class="end-num"></span>
+        </p>
+      </div>
+      <div class="project-title first-project-title">
+        <h2></h2>
+      </div> 
+      <div class="slide slide_wrap">
+        <div class="slide_item">
+          <div class="project-view-inner">
+            <div class="project-contents">
+              <div class="left left-computer first-left">
+                <img class="computer-img" src="/img/website/computer_gbg.png" alt="">
+              </div>
+              <div class="right first-right">
+                <div class="view-more">
+                  <a target="_blank" href="https://gyeongbokgung-c8579.web.app/">홈페이지 바로가기</a>
+                  <img class="arrow" src="/img/arrow_white.png" alt="">
+                </div>
+                <div class="overview">
+                  <p>Overview.</p>
+                  <span>내국인, 외국인 모두 경복궁에서 다양한 체험을 즐길 수 있도록 낮과 밤의 또는 낮밤 패키지 이벤트마다 날짜, 시간에 맞춰 예약 할 수 있도록 구현한 사이트입니다. 외국인들도 편하게 예약할 수 있도록 영문사이트도 함께 제작했습니다.</span>
+                </div>
+                <div class="keyword">
+                  <p>Keyword.</p>
+                  <div>
+                      <span>모바일/템플릿 반응형</span>
+                      <span>예약 서비스 구현</span> 
+                      <span>자체 디자인</span> 
+                      <span>영문 사이트 제작</span>
+                  </div>
+                </div>
+                <div class="category">
+                  <p>Category.</p>
+                  <div class="language">
+                    <span class="html">HTML</span>
+                    <span class="css">CSS</span>
+                    <span class="js">Javascript</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slide_item">
+          <div class="project-view-inner">
+            <div class="text">
+            </div>
+            <div class="project-contents">
+              <div class="left left-computer">
+                <img class="computer-img" src="/img/website/computer_aquarium.png" alt="">
+              </div>
+              <div class="right">
+                <div class="view-more">
+                  <a target="_blank" href="https://aquarium-16b19.web.app/">홈페이지 바로가기</a>
+                  <img class="arrow" src="/img/arrow_white.png" alt="">
+                </div>
+                <div class="overview">
+                  <p>Overview.</p>
+                  <span>
+                    아쿠아 플라넷 제주 홈페이지를 자체 디자인으로 제작하였습니다. Full Page Scroll을 위해 velocity 라이브러리를 사용하였고 슬라이더는 인풋 라디오 버튼과 slick slider 라이브러리를 사용하여 구현하였습니다.
+                  </span>
+                </div>
+                <div class="keyword">
+                  <p>Keyword.</p>
+                  <div>
+                      <span>자체 디자인</span> 
+                      <span>slick slider 라이브러리</span> 
+                      <span>원페이지 스크롤 라이브러리</span>
+                  </div>
+                </div>
+                <div class="category">
+                  <p>Category.</p>
+                  <div class="language">
+                    <span class="html">HTML</span>
+                    <span class="css">CSS</span>
+                    <span class="js">Javascript</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slide_item">
+          <div class="project-view-inner">
+            <div class="text">
+            </div>
+            <div class="project-contents">
+              <div class="left left-computer">
+                <img class="computer-img" src="/img/website/computer_music.png" alt="">
+              </div>
+              <div class="right">
+                <div class="view-more">
+                  <a target="_blank" href="http://dnzkddl111.dothome.co.kr/music.html
+                  ">홈페이지 바로가기</a>
+                  <img class="arrow" src="/img/arrow_white.png" alt="">
+                </div>
+                <div class="overview">
+                  <p>Overview.</p>
+                  <span>2000년대 한국 인기 영화 OST를 모아둔 사이트입니다. JS로 재생, 멈춤, 되돌리기 각 버튼에 해당 역할을 추가하고 각 뮤직 프레임마다 360도 회전을 위해 next / prev 버튼을 누르면 45도씩 회전되게 구현하였습니다.</span>
+                </div>
+                <div class="keyword">
+                  <p>Keyword.</p>
+                  <div>
+                      <span>모바일 반응형</span>
+                      <span>audio 버튼 제어 구현</span> 
+                      <span>360도 회전 구현</span>
+                  </div>
+                </div>
+                <div class="category">
+                  <p>Category.</p>
+                  <div class="language">
+                    <span class="html">HTML</span>
+                    <span class="css">CSS</span>
+                    <span class="js">Javascript</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slide_item">
+          <div class="project-view-inner">
+            <div class="text">
+            </div>
+            <div class="project-contents">
+              <div class="left left-computer">
+                <img class="computer-img" src="/img/website/computer_natural_video.png" alt="">
+              </div>
+              <div class="right">
+                <div class="view-more">
+                  <a target="_blank" href="https://naturalvideo.web.app/">홈페이지 바로가기</a>
+                  <img class="arrow" src="/img/arrow_white.png" alt="">
+                </div>
+                <div class="overview">
+                  <p>Overview.</p>
+                  <span>
+                    동영상을 활용한 웹사이트입니다. CSS를 활용하여 마우스 오버 시 해당 article이 확대가 되고 JS를 활용하여 클릭 이벤트를 주어 article 클릭 시 모달창을 띄울 수 있도록 구현하였습니다.
+                  </span>
+                </div>
+                <div class="keyword">
+                  <p>Keyword.</p>
+                  <div>
+                      <span>자체 디자인</span> 
+                      <span>모달창 구현</span> 
+                  </div>
+                </div>
+                <div class="category">
+                  <p>Category.</p>
+                  <div class="language">
+                    <span class="html">HTML</span>
+                    <span class="css">CSS</span>
+                    <span class="js">Javascript</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+            <div class="slide_prev_button slide_button">
+              <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="slide_next_button slide_button">
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+            <!-- <ul class="slide_pagination"></ul> -->
+        </div>
+        <!-- <ul class="slide_pagination"></ul> -->
+    </div>
+  </div> 
+  <div class="next-click">
+    <a href="/mobile.html">
+      <div>
+        <p><b>(03)</b></p>Mobile
+        <span class="arrow">
+          <span class="step1"></span>
+          <span class="step2"></span>
+        </span>
+      </div>
+    </a>
+  </div>
+  <div id="footer"></div>
+</body>
+</html>

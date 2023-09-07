@@ -1,0 +1,211 @@
+@import url('/css/reset.css');
+@import url('/css/nav.css');
+@import url('/css/common.css');
+@import url('/css/footer.css');
+/* body {
+    color: rgb(163, 141, 201);
+}  */
+.contact-wrapper {
+    width: 100%;
+    margin-top: 7rem;
+}
+.contact-inner {
+    width: 1200px;
+    margin: 0 auto;
+}
+.contact-top {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.contact-top img {
+    width: 30%;
+}
+.intro-text {
+    width: 50%;
+}
+.intro-text h1 {
+    font-size: 5rem;
+    line-height: 1;
+    z-index: 2;
+}
+.intro-text h1:first-child, .intro-text h1:last-child {
+    position: relative;
+}
+.intro-text h1:first-child::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #222;
+    position: absolute;
+    top: 50%;
+    margin-left: 1rem;
+}
+.intro-text h1:last-child::after {
+    position: absolute;
+    content: 'Frontend Developer';
+    font-size: 1.4rem;
+    top: 20px;
+    margin-left: 1rem;
+    font-weight: 400;
+}
+.contact-top p {
+    width: 50%;
+    position: absolute;
+    background-color: #dcd9d9;
+    border-radius: 20px;
+    padding: 3rem 3rem;
+    right: 0;
+    top: 120px;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.8;
+    word-break: keep-all;
+}
+.contact-left-right {
+    display: flex;
+    margin-top: 2rem;
+}
+.contact-left {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 0 auto;
+}
+.contact p, .experinence p, .mySkill-list p, .license p  {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    color: #222;
+}
+.contact, .mySkill-list {
+    margin-bottom: 2rem;
+}
+.contact .contact-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 1.4rem;
+}
+.contact .contact-content i {
+    margin-right: 1rem
+}
+.contact .contact-content span {
+    font-weight: 300;
+}
+.contact-right {
+    width: 45%;
+}
+.experinence i, .experinence span {
+    font-size: 1.4rem;
+}
+table tr {
+    display: flex;
+    align-items: stretch;
+    margin-bottom: 1.5rem;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: nowrap;
+}
+table tr:last-child {
+    margin-bottom: 0;
+}
+table td {
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+table td h4 {
+    margin-bottom: 1rem;
+}
+table td:nth-child(1) {
+    font-size: 1.2rem;
+}
+table td:nth-child(2) {
+    width: 60%;
+}
+table h4 {
+    font-weight: normal;
+}
+
+table .work {
+    display: flex;
+    flex-wrap: wrap;
+}
+table .work b {
+    position: relative;
+    /* border: 1px solid rgb(201, 201, 201); */
+    color: #222;
+    letter-spacing: 0.04em;
+    font-size: 1rem;
+    flex-shrink: 0;
+    font-weight: 600;
+    border-right: 1px;
+    margin-right: 0.5rem;
+}
+.separator::after {
+    content: " | ";
+}
+
+
+.skill-total {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.mySkill-list img {
+    width: 6rem;
+}
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-bottom: 1rem;
+}
+.project-keyword {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+.project-keyword span {
+    border: 1.5px solid #222;
+    color: #222;
+    letter-spacing: 0.04em;
+    font-size: 1.2rem;
+    line-height: 160%;
+    border-radius: 30px;
+    padding: 0.4rem 1.4rem;
+    flex-shrink: 0;
+}
+
+@media all and (max-width: 1024px) {
+    .contact-inner {
+        width: 100%;
+        padding: 0 3rem;
+    }
+}
+@media all and (max-width: 768px) {
+    .contact-top {
+        flex-direction: column;
+    }
+    .intro-text {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    .contact-left-right {
+        flex-direction: column;
+    }
+    .contact-left, .contact-right {
+        width: 100%;
+    }
+    .contact-top img {
+        width: 50%;
+    }
+    .contact-top p {
+        position: static;
+        width: 100%;
+    }
+    
+}

@@ -1,0 +1,386 @@
+@import url('/css/reset.css');
+@import url('/css/nav.css');
+@import url('/css/common.css');
+@import url('/css/footer.css');
+.section-group {
+    position: relative;
+}
+.project-header-wrapper {
+    width: 100%;
+    margin-top: 10rem;
+}
+.project-header-inner {
+    width: 1200px;
+    margin: 0  auto;
+    overflow: hidden;
+}
+.project-header-title {
+    transform: translateY(100%);
+    opacity: 0;
+    transition: 1s;
+}
+.project-header-title h1 {
+    font-size: 5rem;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+.project-sub-title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.project-sub-title img {
+    width: 4.5rem;
+}
+.project-sub-title h1 {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    color: white;
+    -webkit-text-stroke: 1px #222;
+    /* box-shadow: inset 0 -2rem 0 #222; */
+}
+.project-sub-title h1:before {
+    content: attr(title);
+    display: block;
+    position: absolute;
+    width: 0px;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #fff;
+    background-color: #222;
+}
+.project-sub-title h1:hover:before {
+    transition: all 0.7s linear;
+    width: 100%;
+    -webkit-text-stroke: 0px;
+    /* padding: 0.5rem; */
+}
+.project-header-text {
+    margin-top: 3rem;
+    width: 60%;
+    margin-left: 40%;
+    overflow: hidden;
+}
+.project-header-text p {
+    text-align: right;
+    font-size: 1.2rem;
+    font-weight: 300;
+    word-break: keep-all;
+    transform: translateY(100%);
+    opacity: 0;
+    transition: 1s;
+}
+.project-header-text p b {
+    font-weight: 600;
+}
+
+/* React Project Section ...... */
+.react-project-wrapper {
+    width: 100%;
+    /* background-color: #eee; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 5rem 0;
+    margin-bottom: 3rem;
+}
+.container{
+    position: relative;
+	width: 1200px;
+    margin: 0 auto; 
+    /* padding: 0 45px; */
+    padding: 2rem 0;
+}
+.slide_wrapper{
+	position: relative;
+	width: 1200px;
+	height: 600px;
+	overflow:hidden;
+}
+.slides{
+	position: absolute;
+	left:0;
+    top:0;	
+	height: 500px;
+	width:100%;
+}
+.slides.animated{
+	transition: 0.5s ease-out;
+}
+.slides li{
+	/* width: 370px; */
+	height: auto;
+	/* background:#ccc; */
+	position: absolute;
+    object-fit: cover;
+	background-size: cover;
+}
+.slides li img{
+	width: 100%;
+	height: auto;
+    object-fit: cover;
+	background-size: cover;
+    margin-bottom: 2rem;
+}
+.project-img {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 2rem;
+    overflow: hidden;
+    border: 1px solid #eee;
+}
+.slides li img:hover {
+    scale: 1.1;
+    transition: 0.5s;
+}
+.rect-project-text {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    border-top: 2px solid #222;
+}
+.rect-project-text .react-project-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+}
+.react-project-name h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #222;
+}
+.rect-project-text i {
+    font-size: 0.5rem;
+    color: #222;
+}
+.rect-project-text span {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #666;
+    text-align: center;
+    word-break: keep-all;
+}
+.react-project-btn button {
+    cursor: pointer;
+    font-family: 'Poppins';
+    font-size: 1rem;
+    background-color: #eee;
+    padding: 0.2rem 1.2rem;
+    border: 1px solid #222;
+    transition: 0.5s;
+}
+.react-project-btn button:hover {
+    background-color: #222;
+    color: #fff;
+}
+.react-project-btn button a {
+    color: #222;
+}
+.react-project-btn button:hover a {
+    color: #fff;
+}
+.slide_btns {
+    /* position: absolute; */
+    bottom: 35px;
+    display: flex;
+    gap: 3rem;
+}
+.slide_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: absolute; */
+    top: 0;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #222;
+    cursor: pointer;
+}
+.slide_button i {
+    color: #fff;
+}
+.slide_prev_button {
+    left: 0;
+}
+.slide_next_button {
+    right: 20px;
+}
+
+.modal-custom {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow:auto;
+    background-color:rgb(0,0,0);
+    background-color:rgba(0,0,0,0.6);
+}
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 996px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19); -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+}
+@-webkit-keyframes animatetop {
+    from {
+        top:-300px;
+        opacity:0
+    }
+    to {
+        top:0;
+        opacity:1
+    }
+}
+@keyframes animatetop {
+    from {
+        top:-300px;
+        opacity:0
+    }
+    to {
+        top:0;
+        opacity: 1
+    }
+}
+.close-modal {
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+.close-modal:hover,.close-modal:focus { 
+    color:#000;
+    text-decoration:none;
+    cursor:pointer;
+}
+.modal-header {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color:#ddd;
+    color:white;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.modal-header h2 {
+    font-weight: 400;
+}
+.modal-body {
+    padding: 2rem;
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.modal-img {
+    width: 60%;
+    height: 100%;
+}
+.modal-text {
+    width: 40%;
+    height: 100%;
+}
+.modal-img img {
+    width: 100%;
+}
+.modal-text {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+    word-break: keep-all;
+}
+.modal-text h4 {
+    font-size: 2rem;
+}
+.modal-text button {
+    padding: 0.5rem 1rem;
+    border: 1px solid #222;
+    background-color: #fff;
+    transition: 0.5s;    
+}
+.modal-text button:hover {
+    background-color: #222;
+}
+.modal-text button:hover a {
+    color: #fff;
+}
+.modal-text button a {
+    color: #222;
+    font-size: 1.2rem;
+}
+
+@media all and (max-width: 1204px) {
+    .project-header-wrapper {
+        padding: 0 3rem;
+    }
+    .project-header-inner {
+        width: 100%;
+        padding: 3rem;
+    }
+    .modal-content {
+        width: 100%;
+    }
+}
+@media all and (max-width: 768px) {
+    .project-view-wrapper {
+        padding: 5rem 3rem;
+    }
+    .project-header-inner {
+        width: 100%;
+    }
+    .project-header-text {
+        margin-top: 3rem;
+        width: 100%;
+        margin-left: 0;
+    }
+    .project-header-text p{
+        text-align: left;
+    }
+    .react-project-wrapper {
+        width: 100%;
+        padding: 0 3rem;
+    }
+    /* My Img Section */
+	.container {
+		width: 100%;
+	}
+	.slide_wrapper {
+		width:100%;
+	}
+    .slides li {
+        width: 100%;
+        padding: 8px;
+    }
+    .slides li img{
+        height: auto;
+    }
+    .modal-body {
+        display: block;
+    }
+    .modal-img {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    .modal-text {
+        width: 100%;
+    }
+}
